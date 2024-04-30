@@ -110,7 +110,7 @@ func Listen(config Config) (*Listener, error) {
 					l.InsecureURL = u
 				}
 			}
-			if l.URL != nil && l.InsecureURL != nil {
+			if l.URL != nil {
 				ready <- true
 			}
 		}
